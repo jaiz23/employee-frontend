@@ -40,7 +40,7 @@ export const columns = [
 export const fetchDepartments = async () => {
   let departments;
   try {
-    const responnse = await axios.get("http://localhost:5001/api/department", {
+    const responnse = await axios.get("https://employee-api-flax.vercel.app/api/api/department", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
       },
