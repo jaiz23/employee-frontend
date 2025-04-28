@@ -61,7 +61,7 @@ export const getEmployees = async (id) => {
   let employees;
   try {
     const responnse = await axios.get(
-      `http://localhost:5001/api/employee/department/${id}`,
+      `https://employee-api-flax.vercel.app/api/employee/department/${id}`,
       {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,

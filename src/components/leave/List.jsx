@@ -12,7 +12,7 @@ const List = () => {
   const fetchLeaves = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5001/api/leave/${id}/${user.role}`,
+        `https://employee-api-flax.vercel.app/api/leave/${id}/${user.role}`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,

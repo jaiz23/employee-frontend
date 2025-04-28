@@ -10,7 +10,7 @@ const View = () => {
     const fetchEmployee = async () => {
       try {
         const responnse = await axios.get(
-          `http://localhost:5001/api/employee/${id}`,
+          `https://employee-api-flax.vercel.app/api/employee/${id}`,
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,

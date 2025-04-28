@@ -15,7 +15,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5001/api/auth/login",
+        "https://employee-api-flax.vercel.app/api/auth/login",
         { email, password }
       );
       if(response.data.success) {
